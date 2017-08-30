@@ -1,10 +1,12 @@
 
 var BasicCard = function(front, back) {
+
+    if(this instanceof BasicCard) {
     this.front = front;
     this.back = back;
-    // this.checkQuestion = function() {
-        
-    // }
+    }else {
+        return new BasicCard(front, back);
+    }
 }
 
 
